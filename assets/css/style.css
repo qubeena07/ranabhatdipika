@@ -331,9 +331,29 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
+/* .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+} */
+.avatar-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Ensures a full circle */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0.5px solid hsl(45, 100%, 71%);
+  box-sizing: border-box;
+
+
+}
+
+.avatar-box img {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
 }
 
 .info-content .name {
